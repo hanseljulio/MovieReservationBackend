@@ -1,0 +1,7 @@
+D:\School Stuff\CS Side Projects\Movie Reservation\MovieReservationBackend\obj\Debug\net9.0\MovieReservationBackend.API.csproj.AssemblyReference.cache
+D:\School Stuff\CS Side Projects\Movie Reservation\MovieReservationBackend\obj\Debug\net9.0\MovieReservationBackend.API.GeneratedMSBuildEditorConfig.editorconfig
+D:\School Stuff\CS Side Projects\Movie Reservation\MovieReservationBackend\obj\Debug\net9.0\MovieReservationBackend.API.AssemblyInfoInputs.cache
+D:\School Stuff\CS Side Projects\Movie Reservation\MovieReservationBackend\obj\Debug\net9.0\MovieReservationBackend.API.AssemblyInfo.cs
+D:\School Stuff\CS Side Projects\Movie Reservation\MovieReservationBackend\obj\Debug\net9.0\MovieReservationBackend.API.csproj.CoreCompileInputs.cache
+D:\School Stuff\CS Side Projects\Movie Reservation\MovieReservationBackend\obj\Debug\net9.0\MovieReservationBackend.API.MvcApplicationPartsAssemblyInfo.cs
+D:\School Stuff\CS Side Projects\Movie Reservation\MovieReservationBackend\obj\Debug\net9.0\MovieReservationBackend.API.MvcApplicationPartsAssemblyInfo.cache
