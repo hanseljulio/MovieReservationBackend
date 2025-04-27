@@ -4,7 +4,7 @@ VisualStudioVersion = 17.13.35919.96
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieReservationBackend.API", "MovieReservationBackend.API.csproj", "{185B7FAB-291A-462D-B3CB-BDDE8CAD2E93}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieReservation.Application", "..\MovieReservation.Application\MovieReservation.Application.csproj", "{E9FDF43F-C03C-4FDE-BC54-A919E735CA6B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieReservation.ApplicationServices", "..\MovieReservation.Application\MovieReservation.ApplicationServices.csproj", "{E9FDF43F-C03C-4FDE-BC54-A919E735CA6B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieReservation.Domain", "..\MovieReservation.Domain\MovieReservation.Domain.csproj", "{112C5EC8-9897-4009-A887-4F044B65A7B3}"
 EndProject

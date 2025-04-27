@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MovieReservation.Domain\MovieReservation.Domain.csproj" />
+    <ProjectReference Include="..\MovieReservation.Infrastructure\MovieReservation.Infrastructure.csproj" />
+    <ProjectReference Include="..\MovieReservation.Shared\MovieReservation.Shared.csproj" />
+  </ItemGroup>
+
+</Project>

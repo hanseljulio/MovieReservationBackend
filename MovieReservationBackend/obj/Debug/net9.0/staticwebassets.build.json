@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "DioVLYAClgIHy6uWDFEqIU8fp2uzbb7SuN9qnjQ16g4=",
+  "Source": "MovieReservationBackend.API",
+  "BasePath": "_content/MovieReservationBackend.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
