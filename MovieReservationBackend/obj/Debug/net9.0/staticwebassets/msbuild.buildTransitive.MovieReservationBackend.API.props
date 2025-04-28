@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\buildMultiTargeting\MovieReservationBackend.API.props" />
-</Project>
