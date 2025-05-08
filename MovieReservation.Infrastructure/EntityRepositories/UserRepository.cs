@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using MovieReservation.Domain.Repositories;
 using MovieReservation.Infrastructure.Context;
+using MovieReservation.Shared.Entities;
 using MovieReservation.Shared.RequestResponse;
 
 namespace MovieReservation.Infrastructure.EntityRepositories
@@ -40,6 +41,16 @@ namespace MovieReservation.Infrastructure.EntityRepositories
             }
 
             return new UserResponse() { Id = 0 };
+        }
+
+        public async Task PostUserAsync(Users entity)
+        {
+            entity.CreatedAt = DateTimeOffset.UtcNow;
+            entity.CreatedBy = "DEV";
+            entity.ModifiedAt = DateTimeOffset.UtcNow;
+            entity.ModifiedBy = "DEV";
+            this.dbContext.Users.Add(entity);
+            await this.dbContext.SaveChangesAsync();
         }
     }
 }

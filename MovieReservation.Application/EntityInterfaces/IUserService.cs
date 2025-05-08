@@ -10,5 +10,6 @@ namespace MovieReservation.ApplicationServices.EntityInterfaces
     public interface IUserService
     {
         Task<UserResponse> GetUserInformationAsync(string username);
+        Task<SubmissionResponse<object>> PostUserAsync(UserRequest request);
     }
 }

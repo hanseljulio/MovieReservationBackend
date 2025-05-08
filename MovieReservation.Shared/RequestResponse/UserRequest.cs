@@ -4,11 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MovieReservation.Shared.Entities
+namespace MovieReservation.Shared.RequestResponse
 {
-    public class Users
+    public class UserRequest
     {
-        public int Id { get; set; }
         public string UserName { get; set; }
         public string FullName { get; set; }
         public string Email { get; set; }
@@ -23,6 +22,5 @@ namespace MovieReservation.Shared.Entities
         public DateTimeOffset ModifiedAt { get; set; }
         public string CreatedBy { get; set; }
         public string ModifiedBy { get; set; }
-
     }
 }
