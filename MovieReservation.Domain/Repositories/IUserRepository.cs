@@ -12,5 +12,6 @@ namespace MovieReservation.Domain.Repositories
     {
         Task<UserResponse> GetUserInformationAsync(string username);
         Task PostUserAsync(Users entity);
+        Task<Users> GetUserAsync(string username);
     }
 }

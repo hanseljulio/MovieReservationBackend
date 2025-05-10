@@ -20,6 +20,14 @@ namespace MovieReservation.Infrastructure.EntityRepositories
             this.dbContext = dbContext;
         }
 
+        public async Task<Users> GetUserAsync(string username)
+        {
+            var query = await this.dbContext.Users.Where(x => x.UserName.ToLower() == username.ToLower() && x.IsActive == true)
+                    .FirstOrDefaultAsync().ConfigureAwait(false);
+
+            return query;
+        }
+
         public async Task<UserResponse> GetUserInformationAsync(string username)
         {
             var query = await this.dbContext.Users.Where(x => x.UserName.ToLower() == username.ToLower() && x.IsActive == true)

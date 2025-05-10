@@ -1,6 +1,8 @@
 ﻿using MovieReservation.ApplicationServices.EntityImplementations;
 using MovieReservation.ApplicationServices.EntityInterfaces;
 using MovieReservation.Domain.Repositories;
+using MovieReservation.Domain.SeedWork;
+using MovieReservation.Infrastructure;
 using MovieReservation.Infrastructure.EntityRepositories;
 
 namespace MovieReservationBackend.API.Extensions
@@ -14,6 +16,9 @@ namespace MovieReservationBackend.API.Extensions
 
 
             services.AddScoped<IUserRepository, UserRepository>();
+
+
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
 
             return services;
         }
