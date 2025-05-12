@@ -10,5 +10,6 @@ namespace MovieReservation.ApplicationServices.EntityInterfaces
     public interface IMovieService
     {
         Task<SubmissionResponse<object>> PostMovieAsync(MovieRequest request);
+        Task<SubmissionResponse<object>> UpdateMovieAsync(MovieRequest request);
     }
 }

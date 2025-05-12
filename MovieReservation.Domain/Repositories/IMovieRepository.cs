@@ -10,5 +10,6 @@ namespace MovieReservation.Domain.Repositories
     public interface IMovieRepository
     {
         Task PostMovieAsync(Movies entity);
+        Task<Movies> GetMovieByIdAsync(int id);
     }
 }

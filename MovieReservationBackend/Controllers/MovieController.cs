@@ -34,5 +34,26 @@ namespace MovieReservationBackend.API.Controllers
                 return new OkObjectResult(SubmissionResponse<object>.ErrorResponse(ex.Message));
             }
         }
+
+        [HttpPost]
+        [Route("/api/movies/update")]
+        [ProducesResponseType(200)]
+        [ProducesResponseType(400)]
+        [ProducesResponseType(404)]
+        [ProducesResponseType(500)]
+        public async Task<IActionResult> UpdateMovieAsync(MovieRequest request)
+        {
+            try
+            {
+                var response = await movieService.UpdateMovieAsync(request);
+
+                return new OkObjectResult(response);
+
+            }
+            catch (Exception ex)
+            {
+                return new OkObjectResult(SubmissionResponse<object>.ErrorResponse(ex.Message));
+            }
+        }
     }
 }

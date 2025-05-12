@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 using MovieReservation.Domain.Repositories;
 using MovieReservation.Infrastructure.Context;
 using MovieReservation.Shared.Entities;
@@ -26,6 +27,13 @@ namespace MovieReservation.Infrastructure.EntityRepositories
             entity.ModifiedBy = "DEV";
             this.dbContext.Movies.Add(entity);
             await this.dbContext.SaveChangesAsync();
+        }
+
+        public async Task<Movies> GetMovieByIdAsync(int id)
+        {
+            var query = await this.dbContext.Movies.Where(x => x.Id == id && x.IsActive == true).FirstOrDefaultAsync().ConfigureAwait(false);
+
+            return query;
         }
     }
 }
