@@ -14,9 +14,11 @@ namespace MovieReservationBackend.API.Extensions
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
             services.AddScoped<IUserService, UserService>();
             services.AddScoped<IMovieService, MovieService>();
+            services.AddScoped<IRoomService, RoomService>();
 
             services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<IMovieRepository, MovieRepository>();
+            services.AddScoped<IRoomRepository, RoomRepository>();
 
             services.AddScoped<IUnitOfWork, UnitOfWork>();
 

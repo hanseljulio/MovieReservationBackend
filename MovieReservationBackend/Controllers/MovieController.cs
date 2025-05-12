@@ -35,7 +35,7 @@ namespace MovieReservationBackend.API.Controllers
             }
         }
 
-        [HttpPost]
+        [HttpPut]
         [Route("/api/movies/update")]
         [ProducesResponseType(200)]
         [ProducesResponseType(400)]

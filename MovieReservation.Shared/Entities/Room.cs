@@ -9,7 +9,7 @@ namespace MovieReservation.Shared.Entities
     public class Room
     {
         public int Id { get; set; }
-        public int RoomName { get; set; }
+        public string RoomName { get; set; }
         public int Capacity { get; set; }
         public DateTimeOffset CreatedAt { get; set; }
         public DateTimeOffset ModifiedAt { get; set; }
